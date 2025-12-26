@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
@@ -6,10 +6,10 @@ from src.agent import build_agent
 
 app = FastAPI()
 
-# Allow both local dev and Render frontend if needed later
 ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://orbiiit.vercel.app",
 ]
 
 app.add_middleware(
@@ -25,23 +25,40 @@ agent = build_agent()
 class Query(BaseModel):
     message: str
 
+STYLE_RULES = (
+    "Reply in a short, friendly, and humorous tone. "
+    "Keep answers brief — usually around 40 to 60 words. "
+    "Avoid long explanations. Be playful when appropriate, "
+    "but never rude or offensive."
+)
+
+def soften_trim(text: str, max_words=70):
+    words = text.split()
+    return " ".join(words[:max_words]) if len(words) > max_words else text
+
 @app.post("/askme")
 async def ask_me(q: Query):
-    reply = agent(q.message)
+    prompt = f"{STYLE_RULES}\nUser: {q.message}\nAssistant:"
+    reply = agent(prompt)
+    reply = soften_trim(reply)
     return {"reply": reply}
 
-# Health check (optional but useful)
 @app.get("/")
 async def root():
     return {"status": "ok"}
 
-# Explicit preflight handler WITH headers (Render + Cloudflare safe)
+# Dynamic CORS-safe preflight handler (works for localhost + Vercel)
 @app.options("/askme")
-async def ask_me_options():
+async def ask_me_options(request: Request):
+    origin = request.headers.get("origin")
+
+    if origin not in ALLOWED_ORIGINS:
+        origin = "https://orbiiit.vercel.app"  # safe fallback
+
     return JSONResponse(
         content={},
         headers={
-            "Access-Control-Allow-Origin": "http://localhost:3000",
+            "Access-Control-Allow-Origin": origin,
             "Access-Control-Allow-Methods": "POST, OPTIONS",
             "Access-Control-Allow-Headers": "*",
         },
