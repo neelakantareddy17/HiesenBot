@@ -3,8 +3,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import google.generativeai as genai
-from tools.mess_tool import mess_menu_tool
-from tools.academic_tool import academic_tool
+from src.tools.mess_tool import mess_menu_tool
+from src.tools.academic_tool import academic_tool
+
 
 def build_agent():
     api_key = os.getenv("GOOGLE_API_KEY")
