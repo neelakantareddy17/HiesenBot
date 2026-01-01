@@ -1,61 +1,69 @@
 {
-  "semester": "Odd Semester 2025-26",
-  "program": "B.Tech (Sem III, V, VII)",
-  "instructional_days": 67,
+  "semester": "Even Semester 2025-26",
+  "program": "B.Tech (Sem II, IV, VI, VIII)",
+  "instructional_days": 68,
   "notes": [
-    "Bold numbers 1 to 67 indicate instructional days",
-    "Holidays such as Muharram and Milad-un-Nabi are subject to moon sighting",
-    "Next semester classes start on 1st January 2026"
+    "Bold numbers 1 to 68 indicate instructional days",
+    "Holidays marked with * are subject to moon sighting",
+    "Any change in the calendar will be adopted upon directives from appropriate authorities"
   ],
   "events": {
     "semester_registration": {
-      "higher_semesters": "2025-07-24",
-      "next_semester": "2025-12-26"
+      "even_sem_online_registration": "2025-12-26",
+      "physical_reporting_hostel": "2025-12-28"
+    },
+    "classes_begin": {
+      "first_instructional_day": "2026-01-01"
     },
     "class_committees": {
-      "S5_S7_first": "2025-07-27",
-      "S3_first": "2025-07-29",
-      "S3_second": "2025-10-10",
-      "S5_S7_second": "2025-10-08",
-      "final_meeting": "2025-12-12"
+      "S2_S8_first": "2026-01-29",
+      "S4_S6_first": "2026-01-30",
+      "S2_S8_second": "2026-03-05",
+      "S4_S6_second": "2026-03-06",
+      "final_meeting": "2026-04-10"
     },
-    "course_drop_last_day": "2025-08-13",
+    "course_drop_last_day": "2026-01-13",
     "mid_semester_exams": {
-      "start_date": "2025-09-22"
+      "start_date": "2026-02-18",
+      "marks_submission_last_day": "2026-03-03"
     },
-    "end_semester_exams": {
-      "start_date": "2025-11-14"
-    },
-    "grades": {
-      "submission_deadline": "2025-12-10",
-      "result_publication": "2025-12-18"
-    },
-    "sports_meet": {
-      "start": "2025-10-24",
-      "end": "2025-10-26"
+    "attendance": {
+      "mid_semester_submission": "2026-02-12",
+      "final_submission": "2026-04-08"
     },
     "project_reviews": {
-      "btp_ms_first_review_week": "2025-09-08",
-      "btp_hons_ms_final_review_week": "2025-11-10"
+      "btp_hons_ms_first_review_week": "2026-01-05",
+      "btp_hons_ms_final_review_week": "2026-03-09"
     },
-    "attendance_submission": "2025-11-07",
-    "course_evaluation": "2025-11-11",
-    "class_ends": "2025-11-12",
-    "repeat_exam_start": "2025-12-30"
+    "techno_cultural_fest": {
+      "start": "2026-03-27",
+      "end": "2026-03-29"
+    },
+    "end_semester_exams": {
+      "start_date": "2026-04-16",
+      "buffer_day": "2026-03-25",
+      "semester_ends": "2026-04-30"
+    },
+    "grades": {
+      "submission_deadline": "2026-05-08",
+      "result_publication": "2026-05-19",
+      "repeat_exam_grades_last_day": "2026-06-08"
+    },
+    "course_evaluation": "2026-04-10",
+    "class_ends": "2026-04-12",
+    "repeat_exam_start": "2026-06-01"
   },
   "holidays": {
-    "Muharram": "2025-07-06",
-    "Independence_Day": "2025-08-15",
-    "Onam-Thiru_Onam": "2025-09-05",
-    "Milad_un_Nabi": "2025-09-05",
-    "Dussehra_Mahanavami": "2025-10-01",
-    "Mahatma_Gandhi_Birthday": "2025-10-02",
-    "Diwali": "2025-10-20",
-    "Guru_Nanak_Birthday": "2025-11-05",
-    "Christmas": "2025-12-25"
+    "Republic_Day": "2026-01-26",
+    "Magha_Bihu_Pongal": "2026-01-14",
+    "Holi": "2026-03-04",
+    "Good_Friday": "2026-04-03",
+    "Id_ul_Fitr": "2026-04-20",
+    "Budha_Purnima": "2026-05-01",
+    "Muharram": "2026-06-26"
   },
   "academic_dates": {
-    "classes_begin": "2025-07-01",
-    "class_ends": "2025-11-12"
+    "classes_begin": "2026-01-01",
+    "class_ends": "2026-04-12"
   }
 }
