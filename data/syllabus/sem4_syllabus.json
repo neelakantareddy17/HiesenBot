@@ -1,0 +1,224 @@
+{
+  "semester": "Semester IV",
+  "subjects": [
+    {
+      "code": "IMA221",
+      "name": "Differential Equations and Transforms",
+      "credits": "3-1-0-4",
+      "objectives": [
+        "Find Fourier series representation of functions",
+        "Apply Fourier series to solve partial differential equations",
+        "Introduce Laplace and Fourier transforms",
+        "Identify and solve ordinary differential equations",
+        "Introduce partial differential equations and solution methods"
+      ],
+      "outcomes": [
+        "Solve engineering problems using Fourier series",
+        "Compute Laplace and Fourier transforms",
+        "Solve first-order differential equations",
+        "Solve higher-order linear differential equations",
+        "Classify and solve PDEs with physical interpretation"
+      ],
+      "syllabus": [
+        "Fourier Series",
+        "Fourier Transform",
+        "Ordinary Differential Equations",
+        "Partial Differential Equations",
+        "Fourier Series Solutions of PDEs"
+      ],
+      "references": [
+        "C. Edwards and D. Penney, Elementary Differential Equations, Pearson",
+        "W.E. Boyce and R.C. DiPrima, Elementary Differential Equations",
+        "Erwin Kreyszig, Advanced Engineering Mathematics",
+        "Tyn Myint-U and L. Debnath, Linear Partial Differential Equations"
+      ]
+    },
+    {
+      "code": "ICS221",
+      "name": "Operating Systems",
+      "credits": "3-1-0-4",
+      "objectives": [
+        "Understand OS fundamentals",
+        "Study OS components and structure"
+      ],
+      "outcomes": [
+        "Design operating systems",
+        "Implement OS components",
+        "Develop a small OS"
+      ],
+      "syllabus": [
+        "OS Overview",
+        "Processes and Threads",
+        "CPU Scheduling",
+        "Process Synchronization",
+        "Deadlocks",
+        "Memory Management",
+        "I/O Systems"
+      ],
+      "references": [
+        "William Stallings, Operating Systems",
+        "Andrew S. Tanenbaum, Modern Operating Systems",
+        "Silberschatz et al., Operating System Concepts"
+      ]
+    },
+    {
+      "code": "ICS222",
+      "name": "Object-Oriented Analysis and Design",
+      "credits": "3-0-2-4",
+      "objectives": [
+        "Understand object-based system design",
+        "Develop robust object-oriented models",
+        "Apply architectural and design patterns"
+      ],
+      "outcomes": [
+        "Analyze and model software systems",
+        "Design reusable software components",
+        "Apply design patterns effectively"
+      ],
+      "syllabus": [
+        "System Concepts",
+        "Object Orientation",
+        "UML Modeling",
+        "Analysis and Design",
+        "Design Patterns"
+      ],
+      "references": [
+        "Grady Booch et al., UML User Guide",
+        "Grady Booch, OOAD with Applications",
+        "Martin Fowler, UML Distilled",
+        "Erich Gamma et al., Design Patterns"
+      ]
+    },
+    {
+      "code": "ICS223",
+      "name": "Compiler Design",
+      "credits": "3-0-2-4",
+      "objectives": [
+        "Understand compiler phases",
+        "Learn parsing techniques",
+        "Develop compiler components",
+        "Study code generation and optimization"
+      ],
+      "outcomes": [
+        "Design scanners and parsers",
+        "Apply code optimization techniques",
+        "Design compilers for programming languages"
+      ],
+      "syllabus": [
+        "Lexical Analysis",
+        "Syntax Analysis",
+        "Semantic Analysis",
+        "Intermediate Code Generation",
+        "Runtime Environments",
+        "Code Optimization"
+      ],
+      "references": [
+        "Aho et al., Compilers: Principles, Techniques and Tools",
+        "Appel, Modern Compiler Implementation"
+      ]
+    },
+    {
+      "code": "ICS224",
+      "name": "Computer Networks",
+      "credits": "3-0-2-4",
+      "objectives": [
+        "Understand networking layers",
+        "Learn networking protocols",
+        "Study network topologies"
+      ],
+      "outcomes": [
+        "Understand networking components",
+        "Explain network layer functionalities",
+        "Develop networking programs"
+      ],
+      "syllabus": [
+        "OSI and TCP/IP Models",
+        "Physical and Data Link Layer",
+        "Network Layer",
+        "Transport Layer",
+        "Application Layer"
+      ],
+      "references": [
+        "Peterson and Davie, Computer Networks",
+        "Tanenbaum, Computer Networks",
+        "Kurose and Ross, Computer Networking"
+      ]
+    },
+    {
+      "code": "ICS225",
+      "name": "Data Structure III",
+      "credits": "1-0-2-2",
+      "objectives": [
+        "Design and analyze advanced algorithms",
+        "Study algorithm analysis techniques"
+      ],
+      "outcomes": [
+        "Analyze algorithm efficiency",
+        "Apply advanced data structures"
+      ],
+      "syllabus": [
+        "Graph Algorithms",
+        "Randomized Algorithms",
+        "Branch and Bound",
+        "Advanced Trees",
+        "Heaps and Advanced Structures"
+      ],
+      "references": [
+        "Cormen et al., Introduction to Algorithms",
+        "Skiena, Algorithm Design Manual",
+        "Kleinberg and Tardos, Algorithm Design"
+      ]
+    },
+    {
+      "code": "IHS221",
+      "name": "Fundamentals of Economics",
+      "credits": "1-0-0-1",
+      "objectives": [
+        "Introduce economics concepts",
+        "Apply economics to decision making"
+      ],
+      "outcomes": [
+        "Analyze demand and supply",
+        "Design competitive strategies"
+      ],
+      "syllabus": [
+        "Micro and Macro Economics",
+        "Demand Analysis",
+        "Production and Costs",
+        "Market Structures",
+        "Macro Economic Concepts"
+      ],
+      "references": [
+        "Dwivedi, Managerial Economics",
+        "Mehta, Managerial Economics",
+        "Dutt and Sundaram, Indian Economy"
+      ]
+    },
+    {
+      "code": "IHS222",
+      "name": "Principles of Management",
+      "credits": "1-0-0-1",
+      "objectives": [
+        "Understand management functions",
+        "Develop managerial skills"
+      ],
+      "outcomes": [
+        "Understand managerial responsibilities",
+        "Apply management techniques"
+      ],
+      "syllabus": [
+        "Management Concepts",
+        "Planning",
+        "Organizing",
+        "Staffing",
+        "Directing",
+        "Controlling"
+      ],
+      "references": [
+        "Aswathappa, Essentials of Management",
+        "Koontz and Weihrich, Essentials of Management",
+        "Robbins and Coulter, Management"
+      ]
+    }
+  ]
+}
